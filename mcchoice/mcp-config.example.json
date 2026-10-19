@@ -1,0 +1,15 @@
+{
+  "_comment": "麦当劳 MCP Server 配置示例。此文件不含任何真实凭据，token 请通过环境变量注入。",
+  "mcpServers": {
+    "mcd-mcp": {
+      "type": "streamablehttp",
+      "url": "https://mcp.mcd.cn",
+      "headers": {
+        "Authorization": "Bearer ${MCD_MCP_TOKEN}"
+      }
+    }
+  },
+  "env": {
+    "MCD_MCP_TOKEN": "<在此填入你的麦当劳 MCP Access Token，从官方渠道获取>"
+  }
+}
