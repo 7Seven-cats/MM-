@@ -1,0 +1,23 @@
+# 凭据与环境变量
+.env
+.env.local
+*.token
+
+# 真实调用审计记录（含门店/商品数据，不入库）
+*.audit.json
+docs/audit/
+
+# 真实业务数据快照（门店名、商品名、实时价格）。
+# 这些是麦当劳的实时业务数据，不应提交到公开仓库。
+# 运行 scripts/mass_test.py 时会用你自己的 token 重新生成。
+tests/fixtures/mcd_snapshot.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
